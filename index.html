@@ -79,7 +79,7 @@
 
       <section class="section work-band" id="work" aria-labelledby="work-title">
         <div class="section-heading">
-          <h2 id="work-title">Current and Recent Work</h2>
+          <h2 id="work-title">Recent Works</h2>
           <p>
             Live and development links that represent recent software, game, and commerce-focused
             product work.
@@ -133,15 +133,65 @@
           </a>
           <a
             class="project-card project-link-card"
-            href="https://drive.google.com/drive/folders/17kaYIpg1dnMkLoAMMpcD-T4bCVjAQFE_?usp=sharing"
-            target="_blank"
-            rel="noreferrer"
+            href="#video-gallery"
           >
             <div class="project-label">Reports</div>
-            <h3>Project Demo Reports</h3>
-            <p>Demo report files and supporting project documentation organized in Google Drive.</p>
-            <span class="text-link">Open reports</span>
+            <h3>Project Demo Gallery</h3>
+            <p>Video demos and supporting project documentation organized across recent builds.</p>
+            <span class="text-link">View demos</span>
           </a>
+        </div>
+      </section>
+
+      <section class="section video-band" id="video-gallery" aria-labelledby="video-gallery-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Demo Reel</p>
+            <h2 id="video-gallery-title">Video Gallery</h2>
+          </div>
+          <p>
+            A curated set of gameplay, UI, systems, and product implementation demos from software
+            and game development work.
+          </p>
+        </div>
+
+        <div class="video-gallery-shell">
+          <div class="video-feature">
+            <div class="video-screen">
+              <video
+                id="featured-video"
+                controls
+                preload="metadata"
+                playsinline
+                src="assets/videos/_Sabong/Initial-WalkThrough-Start-To-GameOver.mp4"
+              ></video>
+            </div>
+            <div class="video-feature-copy">
+              <p class="project-label" id="featured-category">Sabong</p>
+              <h3 id="featured-title">Initial WalkThrough Start To GameOver</h3>
+              <p id="featured-description">
+                Gameplay walkthrough showing the first pass from start flow through game over.
+              </p>
+              <a
+                class="inline-link"
+                href="https://drive.google.com/drive/folders/17kaYIpg1dnMkLoAMMpcD-T4bCVjAQFE_?usp=sharing"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Open report files
+              </a>
+            </div>
+          </div>
+
+          <div class="video-toolbar" aria-label="Video categories">
+            <button class="filter-chip is-active" type="button" data-filter="all">All</button>
+            <button class="filter-chip" type="button" data-filter="Game Systems">Game Systems</button>
+            <button class="filter-chip" type="button" data-filter="UI and Product">UI and Product</button>
+            <button class="filter-chip" type="button" data-filter="VFX and Feel">VFX and Feel</button>
+            <button class="filter-chip" type="button" data-filter="Software">Software</button>
+          </div>
+
+          <div class="video-grid" id="video-grid" aria-label="Project demo videos"></div>
         </div>
       </section>
 
